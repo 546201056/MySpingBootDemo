@@ -1,0 +1,17 @@
+server:
+  port: 8081
+  context-path: /app
+
+spring:
+  profiles:
+    active: a
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://39.107.203.83/android
+      username: root
+      password: root
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
